@@ -1,0 +1,31 @@
+Project Realestate
+
+https://laravel.com/docs/10.x#creating-a-laravel-project
+
+$ composer create-project laravel/laravel lara10x-realestate
+$ cd lara10x-realestate/
+$ php artisan serve
+
+DB_CONNECTION=mysql
+DB_HOST=192.168.56.56
+DB_PORT=3306
+DB_DATABASE=realestate
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+https://laravel.com/docs/10.x/starter-kits#laravel-breeze
+
+$ composer require laravel/breeze --dev
+$ php artisan breeze:install
+jika terjadi masalah masuk
+
+$ sudo nano etc/php/8.2/cli/php.ini
+edit
+extension=pdo_mysql
+hilangkan ;
+
+$ php artisan migrate
+
+
+npm install
+npm run dev
