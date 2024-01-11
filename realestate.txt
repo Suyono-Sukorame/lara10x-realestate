@@ -17,8 +17,9 @@ https://laravel.com/docs/10.x/starter-kits#laravel-breeze
 
 $ composer require laravel/breeze --dev
 $ php artisan breeze:install
-jika terjadi masalah masuk
 
+jika terjadi masalah masuk
+$ mysql -u homestead -p -h 192.168.56.56 -P 3306
 $ sudo nano etc/php/8.2/cli/php.ini
 edit
 extension=pdo_mysql
@@ -31,6 +32,42 @@ $ php artisan migrate
 -----
 $ php artisan make:seeder UsersTableSeeder
 
+jika terjadi masalah masuk
+masuk Homestead/
+$ sudo apt-get install php-mbstring
+$ sudo service apache2 restart
+$ mysql -u homestead -p -h 192.168.56.56 -P 3306
+$ sudo nano etc/php/8.2/cli/php.ini
+edit
+extension=mbstring
+hilangkan ;
 
-npm install
-npm run dev
+$ vagrant reload
+$ php artisan migrate:fresh --seed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
