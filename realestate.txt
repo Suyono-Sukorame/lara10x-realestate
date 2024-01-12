@@ -71,7 +71,11 @@ https://laravel.com/docs/10.x/middleware#defining-middleware
 
 $ php artisan make:middleware Role
 
+-----
 
+Laravel 10 Full Course | #09 Login With Name Email Phone
+
+https://www.youtube.com/watch?v=nqdFulTkFkc&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=10
 
 
 
