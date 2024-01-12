@@ -37,13 +37,19 @@ masuk Homestead/
 $ sudo apt-get install php-mbstring
 $ sudo service apache2 restart
 $ mysql -u homestead -p -h 192.168.56.56 -P 3306
-$ sudo nano etc/php/8.2/cli/php.ini
+$ sudo nano /etc/php/8.2/cli/php.ini
+$ sudo nano /etc/php/8.2/fpm/php.ini
 edit
 extension=mbstring
-hilangkan ;
+extension=pdo_mysql
 
-$ vagrant reload
+hilangkan ;
+$ sudo service php8.2-fpm restart
 $ php artisan migrate:fresh --seed
+
+----
+https://www.youtube.com/watch?v=53dlEH3yXIc&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=7
+
 
 
 
