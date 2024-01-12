@@ -60,6 +60,16 @@ Laravel 10 Full Course | #07 Laravel Multi Auth with Breeze Part 2
 
 https://www.youtube.com/watch?v=oLt7KLXUVM4&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=8
 
+$ php artisan r:l
+
+-----
+Laravel 10 Full Course | #08 Laravel Multi Auth with Breeze Part 3
+
+https://www.youtube.com/watch?v=4myyQrPc_JM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=9
+
+https://laravel.com/docs/10.x/middleware#defining-middleware
+
+$ php artisan make:middleware Role
 
 
 
