@@ -89,7 +89,14 @@ Laravel 10 Full Course | #11 Admin Template Setup
 
 https://www.youtube.com/watch?v=WcySug8kJcY&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=12
 
-sampai menit 08:02
+-----
+
+Laravel 10 Full Course | #12 Dashboard Page Segmentation
+
+https://www.youtube.com/watch?v=hKvRpQoDAmM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=13
+
+$ php artisan cache:clear
+
 
 
 
