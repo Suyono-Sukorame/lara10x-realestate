@@ -48,8 +48,17 @@ $ sudo service php8.2-fpm restart
 $ php artisan migrate:fresh --seed
 
 ----
+
 https://www.youtube.com/watch?v=53dlEH3yXIc&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=7
 
+$ php artisan make:controller AdminController
+
+$ php artisan make:controller AgentController
+
+-----
+Laravel 10 Full Course | #07 Laravel Multi Auth with Breeze Part 2
+
+https://www.youtube.com/watch?v=oLt7KLXUVM4&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=8
 
 
 
