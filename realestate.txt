@@ -97,6 +97,12 @@ https://www.youtube.com/watch?v=hKvRpQoDAmM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 
 $ php artisan cache:clear
 
+-----
+Laravel 10 Full Course | #13 Admin Logout Option
+
+https://www.youtube.com/watch?v=Bq8R4x5gTRY&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=14
+
+-----
 
 
 
