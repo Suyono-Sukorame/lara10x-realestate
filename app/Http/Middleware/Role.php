@@ -20,4 +20,14 @@ class Role
         }
         return $next($request);
     }
+    // public function handle(Request $request, Closure $next, $role): Response
+    // {
+    //     $user = $request->user();
+
+    //     if ($user && $user->role !== $role) {
+    //         return redirect('/admin/dashboard'); // Mengarahkan ke dashboard admin jika bukan admin
+    //     }
+
+    //     return $next($request);
+    // }
 }

@@ -108,6 +108,12 @@ Laravel 10 Full Course | #14 Customize Login Form
 
 https://www.youtube.com/watch?v=Lla5a3mu1ko&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=15
 
+-----
+Laravel 10 Full Course | #15 Refreach Admin Template
+
+https://www.youtube.com/watch?v=UnHSkR9NteM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=16
+
+
 
 
 

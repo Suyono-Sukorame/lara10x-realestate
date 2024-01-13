@@ -72,7 +72,7 @@
                                             <div class="mb-3">
                                                 <label for="login" class="form-label">Email/Name/Phone</label>
                                                 <input type="text" name="login" class="form-control" id="login"
-                                                    placeholder="Email/Name/Phone">
+                                                    placeholder="Email">
                                             </div>
 
                                             <div class="mb-3">
@@ -90,10 +90,9 @@
                                             </div>
                                             <div>
 
-                                                <button type="sumit"
+                                                <button type="submit"
                                                     class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
                                                     Login
-
                                                 </button>
                                             </div>
                                             <a href="register.html" class="d-block mt-3 text-muted">Not a user? Sign

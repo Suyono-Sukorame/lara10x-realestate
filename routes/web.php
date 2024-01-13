@@ -46,7 +46,6 @@ Route::middleware(['auth', 'role:agent'])->group(function () {
         ->name('agent.dashboard');
 }); // End Group Agent Middleware
 
-Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/admin/login', [AdminController::class, 'AdminLogin'])
-        ->name('admin.login');
-});
+
+Route::get('/admin/login', [AdminController::class, 'AdminLogin'])
+    ->name('admin.login');
