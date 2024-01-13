@@ -119,9 +119,14 @@ Laravel 10 Full Course | #16 Update Admin Assets Path
 
 https://www.youtube.com/watch?v=dcK4CUwSeV8&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=17
 
+$ php artisan optimize
 
+$ php artisan optimize
+-----
 
+Laravel 10 Full Course | #17 Admin Profile & Image Update Part 1
 
+https://www.youtube.com/watch?v=izjtIcFrU0A&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=18
 
 
 
