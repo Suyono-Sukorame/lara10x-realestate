@@ -113,7 +113,11 @@ Laravel 10 Full Course | #15 Refreach Admin Template
 
 https://www.youtube.com/watch?v=UnHSkR9NteM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=16
 
+-----
 
+Laravel 10 Full Course | #16 Update Admin Assets Path
+
+https://www.youtube.com/watch?v=dcK4CUwSeV8&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=17
 
 
 
