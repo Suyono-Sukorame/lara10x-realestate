@@ -146,9 +146,13 @@ https://www.w3schools.com/jquery/jquery_get_started.asp
 
 -----
 
+Laravel 10 Full Course | #20 Admin Profile & Image Update Part 4
 
+https://www.youtube.com/watch?v=brhmzpikhEg&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=21
 
+$ php artisan optimize
 
+-----
 
 
 
