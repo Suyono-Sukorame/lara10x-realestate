@@ -153,7 +153,12 @@ https://www.youtube.com/watch?v=brhmzpikhEg&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 $ php artisan optimize
 
 -----
+Laravel 10 Full Course | #21 Adding Toster In For View Message
 
+https://www.youtube.com/watch?v=K9FRcMtQvbQ&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=22
+
+
+-----
 
 
 
