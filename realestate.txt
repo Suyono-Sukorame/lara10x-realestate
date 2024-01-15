@@ -136,7 +136,17 @@ Laravel 10 Full Course | #18 Admin Profile & Image Update Part 2
 
 https://www.youtube.com/watch?v=VUPNTuot1gs&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=19
 
-sampai menit 1:03
+-----
+
+Laravel 10 Full Course | #19 Admin Profile & Image Update Part 3
+
+https://www.youtube.com/watch?v=4k8wupdEVR0&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=20
+
+https://www.w3schools.com/jquery/jquery_get_started.asp
+
+-----
+
+
 
 
 
