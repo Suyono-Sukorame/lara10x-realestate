@@ -128,8 +128,15 @@ Laravel 10 Full Course | #17 Admin Profile & Image Update Part 1
 
 https://www.youtube.com/watch?v=izjtIcFrU0A&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=18
 
+$ php artisan optimize
 
+-----
 
+Laravel 10 Full Course | #18 Admin Profile & Image Update Part 2
+
+https://www.youtube.com/watch?v=VUPNTuot1gs&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=19
+
+sampai menit 1:03
 
 
 
