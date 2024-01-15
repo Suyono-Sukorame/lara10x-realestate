@@ -160,7 +160,14 @@ https://www.youtube.com/watch?v=K9FRcMtQvbQ&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 
 -----
 
+Laravel 10 Full Course | #22 Admin Profile Change Password Part 1
 
+https://www.youtube.com/watch?v=07eMw4YgVuM&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=23
+
+$ php artisan optimize
+
+
+-----
 
 
 
