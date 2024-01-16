@@ -200,8 +200,22 @@ Laravel 10 Full Course | #25 Property Type Crud Part 1
 
 https://www.youtube.com/watch?v=c9FKS59Z26g&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=26
 
+$ php artisan make:controller Backend/PropertyTypeController
 
+$ php artisan make:model PropertyType -m
 
+$ php artisan migrate
+
+$ php artisan optimize
+
+-----
+Laravel 10 Full Course | #26 Property Type Crud Part 2
+
+https://www.youtube.com/watch?v=twWH8t10jc0&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=27
+
+#26 Property Type Crud Part 2 | Form Data Table
+
+-----
 
 
 
