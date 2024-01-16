@@ -11,8 +11,11 @@ class AdminController extends Controller
 {
     public function AdminDashboard()
     {
-        return view('admin.index');
-    } // End Method
+        $id = Auth::user()->id;
+        $profileData = User::find($id);
+        return view('admin.index', compact('profileData'));
+    }
+
 
     public function AdminLogout(Request $request)
     {
@@ -33,6 +36,7 @@ class AdminController extends Controller
         $profileData = User::find($id);
         return view('admin.admin_profile_view', compact('profileData'));
     } // End Method
+
 
     public function AdminProfileStore(Request $request)
     {

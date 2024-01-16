@@ -236,26 +236,8 @@
                                 alt="">
                         </div>
                         <div class="text-center">
-                            <div class="text-center">
-                                <p class="tx-16 fw-bolder">
-                                    @if (isset($profileData))
-                                        {{ $profileData->name }}
-                                    @else
-                                        No profile data available.
-                                    @endif
-                                </p>
-                                <p class="tx-12 text-muted">
-                                    @if (isset($profileData))
-                                        {{ $profileData->email }}
-                                    @else
-                                        <!-- Tampilkan pesan atau logika alternatif jika $profileData tidak ditemukan -->
-                                    @endif
-                                </p>
-                            </div>
-                            {{-- <p class="tx-16 fw-bolder">Aminah</p>
-                            <p class="tx-12 text-muted">aminah@gmail.com</p> --}}
-                            {{-- <p class="tx-16 fw-bolder">{{ $profileData->name }}</p>
-                            <p class="tx-12 text-muted">{{ $profileData->email }}</p> --}}
+                            <p class="tx-16 fw-bolder">{{ $profileData->name }}</p>
+                            <p class="tx-12 text-muted">{{ $profileData->email }}</p>
                         </div>
                     </div>
                     <ul class="list-unstyled p-1">

@@ -172,6 +172,17 @@ Laravel 10 Full Course | #23 Admin Profile Change Password Part 2
 
 https://www.youtube.com/watch?v=bg6rBkNG8tE&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=24
 
+$ php artisan route:list {route yang berjalan}
+
+perbaikan
+
+public function AdminDashboard()
+    {
+        $id = Auth::user()->id;
+        $profileData = User::find($id);
+        return view('admin.index', compact('profileData'));
+    }
+
 $ php artisan optimize
 
 -----
@@ -179,7 +190,10 @@ Laravel 10 Full Course | #24 Take Backup And Restore in Localhost
 
 https://www.youtube.com/watch?v=kvpQg79nZJs&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=25
 
-
+$ php artisan config:cache
+$ php artisan config:clear
+$ php artisan view:clear
+$ php artisan optimize
 
 
 
