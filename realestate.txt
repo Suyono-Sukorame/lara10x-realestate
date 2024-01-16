@@ -168,7 +168,13 @@ $ php artisan optimize
 
 
 -----
+Laravel 10 Full Course | #23 Admin Profile Change Password Part 2
 
+https://www.youtube.com/watch?v=bg6rBkNG8tE&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=24
+
+$ php artisan optimize
+
+sampai di menit 11:33
 
 
 
