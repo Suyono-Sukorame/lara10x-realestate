@@ -194,6 +194,45 @@ $ php artisan config:cache
 $ php artisan config:clear
 $ php artisan view:clear
 $ php artisan optimize
+-----
+
+Laravel 10 Full Course | #25 Property Type Crud Part 1
+
+https://www.youtube.com/watch?v=c9FKS59Z26g&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
