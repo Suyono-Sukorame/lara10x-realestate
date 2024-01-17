@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\Backend\PropertyTypeController;
-use PhpParser\Builder\Property;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +66,12 @@ Route::get('/admin/login', [AdminController::class, 'AdminLogin'])
     ->name('admin.login');
 
 
+// // Property Type All Route
+// Route::controller(PropertyTypeController::class)->group(function () {
+//     Route::get('/all/type', 'AllType')->name('all-type');
+//     Route::get('/add/type', 'AddType')->name('add-type');
+// }); // End Property Type All Route
+
 // Property Group Middleware
 Route::middleware(['auth', 'role:admin'])->group(function () {
 
@@ -75,4 +80,16 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::get('/type', [PropertyTypeController::class, 'AllType'])
             ->name('all.type');
     });
-}); // End Group Agent Middleware
+
+    // Property Type Add Route
+    Route::prefix('add')->group(function () {
+        Route::get('/type', [PropertyTypeController::class, 'AddType'])
+            ->name('add.type');
+
+        // Property Type Add Route
+        Route::prefix('store')->group(function () {
+            Route::post('/type', [PropertyTypeController::class, 'StoreType'])
+                ->name('store.type');
+        });
+    });
+});
