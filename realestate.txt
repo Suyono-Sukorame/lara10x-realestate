@@ -222,13 +222,19 @@ https://www.youtube.com/watch?v=8tDclNvsdx0&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 
 $ php artisan optimize
 ------
-Laravel 10 Full Course | #28 Property Type Crud Part 4
+Laravel 10 Full Course | #28 Property Type Crud Part 4 | Edit Property Type
 
 https://www.youtube.com/watch?v=b9hRGoHu6r8&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=29
 
+$ php artisan optimize
 
+------
 
+Laravel 10 Full Course | #29 Property Type Crud Part 5 | Delete Property Type
 
+https://www.youtube.com/watch?v=HHXUXkCHwgk&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=30
+
+------
 
 
 

@@ -58,4 +58,19 @@ class PropertyTypeController extends Controller
         );
         return Redirect()->route('all.type')->with($notification);
     }
+
+    public function DeleteType($id)
+    {
+        try {
+            PropertyType::findOrFail($id)->delete();
+            $notification = array(
+                'message' => 'Property Type Deleted Successfully',
+                'alert-type' => 'success'
+            );
+            return Redirect()->back()->with($notification);
+        } catch (\Exception $e) {
+            // Tangkap kesalahan jika terjadi
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
+    }
 }

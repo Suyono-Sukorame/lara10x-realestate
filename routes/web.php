@@ -77,6 +77,10 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::put('/update/type/{id}', [PropertyTypeController::class, 'UpdateType'])
         ->name('update.type');
 
+    // Property Type Delete Route
+    Route::delete('/delete/type/{id}', [PropertyTypeController::class, 'DeleteType'])
+        ->name('delete.type');
+
     // Add more routes as needed
 
 });

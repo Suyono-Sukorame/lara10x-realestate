@@ -34,7 +34,13 @@
                                             <td>
                                                 <a href="{{ route('edit.type', $item->id) }}"
                                                     class="btn btn-inverse-warning">Edit</a>
-                                                <a href="#" class="btn btn-inverse-danger">Delete</a>
+                                                <form id="deleteForm" action="{{ route('delete.type', $item->id) }}"
+                                                    method="POST" style="display: inline;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="button" class="btn btn-inverse-danger"
+                                                        onclick="confirmDelete()">Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -48,3 +54,24 @@
 
     </div>
 @endsection
+
+<script>
+    function confirmDelete() {
+        // Gunakan SweetAlert untuk menampilkan pemberitahuan konfirmasi
+        Swal.fire({
+            title: 'Apakah Anda yakin?',
+            text: "Anda tidak akan dapat mengembalikan ini!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Jika pengguna mengonfirmasi, kirim formulir untuk penghapusan
+                document.getElementById('deleteForm').submit();
+            }
+        });
+    }
+</script>
