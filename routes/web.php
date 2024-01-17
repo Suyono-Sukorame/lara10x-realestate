@@ -6,17 +6,6 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\Backend\PropertyTypeController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -65,31 +54,29 @@ Route::middleware(['auth', 'role:agent'])->group(function () {
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])
     ->name('admin.login');
 
-
-// // Property Type All Route
-// Route::controller(PropertyTypeController::class)->group(function () {
-//     Route::get('/all/type', 'AllType')->name('all-type');
-//     Route::get('/add/type', 'AddType')->name('add-type');
-// }); // End Property Type All Route
-
-// Property Group Middleware
+// Property Type Routes
 Route::middleware(['auth', 'role:admin'])->group(function () {
 
     // Property Type All Route
-    Route::prefix('all')->group(function () {
-        Route::get('/type', [PropertyTypeController::class, 'AllType'])
-            ->name('all.type');
-    });
+    Route::get('/all/type', [PropertyTypeController::class, 'AllType'])
+        ->name('all.type');
 
     // Property Type Add Route
-    Route::prefix('add')->group(function () {
-        Route::get('/type', [PropertyTypeController::class, 'AddType'])
-            ->name('add.type');
+    Route::get('/add/type', [PropertyTypeController::class, 'AddType'])
+        ->name('add.type');
 
-        // Property Type Add Route
-        Route::prefix('store')->group(function () {
-            Route::post('/type', [PropertyTypeController::class, 'StoreType'])
-                ->name('store.type');
-        });
-    });
+    // Property Type Store Route
+    Route::post('/store/type', [PropertyTypeController::class, 'StoreType'])
+        ->name('store.type');
+
+    // Property Type Edit Route
+    Route::get('/edit/type/{id}', [PropertyTypeController::class, 'EditType'])
+        ->name('edit.type');
+
+    // Property Type Update Route
+    Route::put('/update/type/{id}', [PropertyTypeController::class, 'UpdateType'])
+        ->name('update.type');
+
+    // Add more routes as needed
+
 });

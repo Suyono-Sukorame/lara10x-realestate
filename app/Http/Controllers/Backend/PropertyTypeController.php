@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\PropertyType;
+use PhpParser\Builder\Property;
 
 class PropertyTypeController extends Controller
 {
@@ -37,4 +38,24 @@ class PropertyTypeController extends Controller
         );
         return Redirect()->route('all.type')->with($notification);
     } // End Method
+
+    public function EditType($id)
+    {
+        $types = PropertyType::findOrFail($id);
+        return view('backend.type.edit_type', compact('types'));
+    }
+
+    public function UpdateType(Request $request)
+    {
+        $pid = $request->id;
+        PropertyType::findOrFail($pid)->update([
+            'type_name' => $request->type_name,
+            'type_icon' => $request->type_icon,
+        ]);
+        $notification = array(
+            'message' => 'Property Type Updated Successfully',
+            'alert-type' => 'success'
+        );
+        return Redirect()->route('all.type')->with($notification);
+    }
 }

@@ -222,6 +222,10 @@ https://www.youtube.com/watch?v=8tDclNvsdx0&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 
 $ php artisan optimize
 ------
+Laravel 10 Full Course | #28 Property Type Crud Part 4
+
+https://www.youtube.com/watch?v=b9hRGoHu6r8&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=29
+
 
 
 
