@@ -84,3 +84,24 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     // Add more routes as needed
 
 });
+
+// Property Aminities Routes
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/all/amenitie', [PropertyTypeController::class, 'AllAmenitie'])
+        ->name('all.amenitie');
+
+    Route::get('/add/amenitie', [PropertyTypeController::class, 'AddAmenitie'])
+        ->name('add.amenitie');
+
+    Route::post('/store/type', [PropertyTypeController::class, 'StoreType'])
+        ->name('store.type');
+
+    Route::get('/edit/type/{id}', [PropertyTypeController::class, 'EditType'])
+        ->name('edit.type');
+
+    Route::put('/update/type/{id}', [PropertyTypeController::class, 'UpdateType'])
+        ->name('update.type');
+
+    Route::delete('/delete/type/{id}', [PropertyTypeController::class, 'DeleteType'])
+        ->name('delete.type');
+});

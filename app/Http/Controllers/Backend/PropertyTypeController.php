@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\PropertyType;
-use PhpParser\Builder\Property;
+use App\Models\Amenities;
 
 class PropertyTypeController extends Controller
 {
@@ -72,5 +72,19 @@ class PropertyTypeController extends Controller
             // Tangkap kesalahan jika terjadi
             return response()->json(['error' => $e->getMessage()], 500);
         }
+    }
+
+    ////  Aminities All Methods ////
+
+    public function AllAmenitie()
+    {
+        // Ganti kode ini sesuai dengan logika bisnis Anda
+        $amenities = Amenities::latest()->get();
+        return view('backend.amenities.all_amenities', compact('amenities'));
+    }
+    public function AddAmenitie()
+    {
+        $amenities = Amenities::latest()->get();
+        return view('backend.amenities.add_amenities', compact('amenities'));
     }
 }

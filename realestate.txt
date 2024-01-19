@@ -234,9 +234,12 @@ Laravel 10 Full Course | #29 Property Type Crud Part 5 | Delete Property Type
 
 https://www.youtube.com/watch?v=HHXUXkCHwgk&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=30
 
+$ php artisan optimize
 ------
 
+Laravel 10 Full Course | #30 Amenities Crud Part 1
 
+https://www.youtube.com/watch?v=yR9EuXb5DOo&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=31
 
 
 
