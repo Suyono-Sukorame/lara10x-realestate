@@ -93,15 +93,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/add/amenitie', [PropertyTypeController::class, 'AddAmenitie'])
         ->name('add.amenitie');
 
-    Route::post('/store/type', [PropertyTypeController::class, 'StoreType'])
-        ->name('store.type');
+    Route::post('/store/amenitie', [PropertyTypeController::class, 'StoreAmenitie'])
+        ->name('store.amenitie');
 
-    Route::get('/edit/type/{id}', [PropertyTypeController::class, 'EditType'])
-        ->name('edit.type');
+    Route::get('/edit/amenitie/{id}', [PropertyTypeController::class, 'EditAmenitie'])
+        ->name('edit.amenitie');
 
-    Route::put('/update/type/{id}', [PropertyTypeController::class, 'UpdateType'])
-        ->name('update.type');
+    Route::put('/update/amenitie', [PropertyTypeController::class, 'UpdateAmenitie'])
+        ->name('update.amenitie');
 
-    Route::delete('/delete/type/{id}', [PropertyTypeController::class, 'DeleteType'])
-        ->name('delete.type');
+    Route::delete('/delete/amenitie/{id}', [PropertyTypeController::class, 'DeleteAmenitie'])
+        ->name('delete.amenitie');
 });

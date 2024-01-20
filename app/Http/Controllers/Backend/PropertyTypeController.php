@@ -87,4 +87,61 @@ class PropertyTypeController extends Controller
         $amenities = Amenities::latest()->get();
         return view('backend.amenities.add_amenities', compact('amenities'));
     }
+
+    public function StoreAmenitie(Request $request)
+    {
+        // Validasi data
+        $validated = $request->validate([
+            'amenities_name' => 'required|unique:amenities|max:200',
+        ]);
+
+        Amenities::insert([
+            'amenities_name' => $request->amenities_name,
+        ]);
+
+        $notification = [
+            'message' => 'Amenities Added Successfully',
+            'alert-type' => 'success'
+        ];
+
+        return redirect()->route('all.amenitie')->with($notification);
+    }
+    public function EditAmenitie($id)
+    {
+        $amenities = Amenities::findOrFail($id);
+        return view('backend.amenities.edit_amenities', compact('amenities'));
+    }
+
+    public function UpdateAmenitie(Request $request)
+    {
+        $validated = $request->validate([
+            'amenities_name' => 'required|unique:amenities|max:200',
+        ]);
+
+        $amenity = Amenities::findOrFail($request->id);
+        $amenity->update([
+            'amenities_name' => $request->amenities_name,
+        ]);
+
+        $notification = [
+            'message' => 'Amenities Updated Successfully',
+            'alert-type' => 'success'
+        ];
+
+        return redirect()->route('all.amenitie')->with($notification);
+    }
+
+    public function DeleteAmenitie($id)
+    {
+        try {
+            Amenities::findOrFail($id)->delete();
+            $notification = [
+                'message' => 'Amenities Deleted Successfully',
+                'alert-type' => 'success'
+            ];
+            return redirect()->back()->with($notification);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
+    }
 }

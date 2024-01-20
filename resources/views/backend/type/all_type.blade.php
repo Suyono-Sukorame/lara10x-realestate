@@ -34,16 +34,18 @@
                                             <td>
                                                 <a href="{{ route('edit.type', $item->id) }}"
                                                     class="btn btn-inverse-warning">Edit</a>
-                                                <form id="deleteForm" action="{{ route('delete.type', $item->id) }}"
-                                                    method="POST" style="display: inline;">
+                                                <form id="deleteForm-{{ $item->id }}"
+                                                    action="{{ route('delete.type', $item->id) }}" method="POST"
+                                                    style="display: inline;">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="button" class="btn btn-inverse-danger"
-                                                        onclick="confirmDelete()">Delete</button>
+                                                        onclick="confirmDelete({{ $item->id }})">Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
                                     @endforeach
+
                                 </tbody>
                             </table>
                         </div>
@@ -56,8 +58,7 @@
 @endsection
 
 <script>
-    function confirmDelete() {
-        // Gunakan SweetAlert untuk menampilkan pemberitahuan konfirmasi
+    function confirmDelete(id) {
         Swal.fire({
             title: 'Apakah Anda yakin?',
             text: "Anda tidak akan dapat mengembalikan ini!",
@@ -69,8 +70,8 @@
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                // Jika pengguna mengonfirmasi, kirim formulir untuk penghapusan
-                document.getElementById('deleteForm').submit();
+                // Jika pengguna mengonfirmasi, kirim formulir untuk penghapusan dengan ID yang sesuai
+                document.getElementById('deleteForm-' + id).submit();
             }
         });
     }

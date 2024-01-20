@@ -12,21 +12,21 @@
                     <div class="card">
                         <div class="card-body">
 
-                            <h6 class="card-title">Tambahkan Fasilitas</h6>
+                            <h6 class="card-title">Edit Amenities</h6>
 
-                            <form method="POST" action="{{ route('store.amenitie') }}" class="forms-sample">
+                            <form method="POST" action="{{ route('update.amenitie') }}" class="forms-sample">
                                 @csrf
+                                @method('PUT')
+
+                                <input type="hidden" name="id" value="{{ $amenities->id }}">
 
                                 <div class="form-group mb-3">
-                                    <label for="amenities_name" class="form-label">Nama Fasilitas</label>
+                                    <label for="amenities_name" class="form-label">Amenities Name</label>
                                     <input type="text" name="amenities_name" class="form-control"
-                                        value="{{ old('amenities_name') }}">
-                                    @error('amenities_name')
-                                        <div class="text-danger">{{ $message }}</div>
-                                    @enderror
+                                        value="{{ $amenities->amenities_name }}">
                                 </div>
 
-                                <button type="submit" class="btn btn-primary me-2">Simpan Perubahan</button>
+                                <button type="submit" class="btn btn-primary me-2">Update Changes</button>
 
                             </form>
 

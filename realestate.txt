@@ -247,11 +247,16 @@ $ php artisan migrate
 
 -------
 
-Laravel 10 Full Course | #31 Add Validation Message
+Laravel 10 Full Course | #31 Add Validation Message | Add Amenities
 
 https://www.youtube.com/watch?v=5avq8DlDhsI&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=32
 
+-------
+Laravel 10 Full Course | #32 Amenities Crud Part 2 | Form Amenitie - Add - Edit - Update - Delete
 
+https://www.youtube.com/watch?v=Y868e6esbKs&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=33
+
+-------
 
 
 

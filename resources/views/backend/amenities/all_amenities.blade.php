@@ -28,16 +28,17 @@
                                     @foreach ($amenities as $key => $item)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $item->amenitis_name }}</td>
+                                            <td>{{ $item->amenities_name }}</td>
                                             <td>
-                                                <a href="{{ route('edit.type', $item->id) }}"
+                                                <a href="{{ route('edit.amenitie', $item->id) }}"
                                                     class="btn btn-inverse-warning">Edit</a>
-                                                <form id="deleteForm" action="{{ route('delete.type', $item->id) }}"
-                                                    method="POST" style="display: inline;">
+                                                <form id="deleteForm_{{ $item->id }}"
+                                                    action="{{ route('delete.amenitie', $item->id) }}" method="POST"
+                                                    style="display: inline;">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="button" class="btn btn-inverse-danger"
-                                                        onclick="confirmDelete()">Delete</button>
+                                                        onclick="confirmDelete('{{ $item->id }}')">Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -54,7 +55,7 @@
 @endsection
 
 <script>
-    function confirmDelete() {
+    function confirmDelete(id) {
         // Gunakan SweetAlert untuk menampilkan pemberitahuan konfirmasi
         Swal.fire({
             title: 'Apakah Anda yakin?',
@@ -68,7 +69,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 // Jika pengguna mengonfirmasi, kirim formulir untuk penghapusan
-                document.getElementById('deleteForm').submit();
+                document.getElementById('deleteForm_' + id).submit();
             }
         });
     }
