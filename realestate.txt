@@ -237,10 +237,19 @@ https://www.youtube.com/watch?v=HHXUXkCHwgk&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 $ php artisan optimize
 ------
 
-Laravel 10 Full Course | #30 Amenities Crud Part 1
+Laravel 10 Full Course | #30 Amenities Crud Part 1 | Amenities - Route - Contoller - views
 
 https://www.youtube.com/watch?v=yR9EuXb5DOo&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=31
 
+$ php artisan make:model Amenities -m
+
+$ php artisan migrate
+
+-------
+
+Laravel 10 Full Course | #31 Add Validation Message
+
+https://www.youtube.com/watch?v=5avq8DlDhsI&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=32
 
 
 
