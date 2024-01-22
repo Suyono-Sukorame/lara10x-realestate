@@ -274,6 +274,23 @@ $ php artisan migrate
 
 -------
 
+Laravel 10 Full Course | #34 Setup User Permission Part 1
+
+https://www.youtube.com/watch?v=RD6rfzDwd5M&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=35
+
+$ php artisan make:controller Backend/RoleController
+
+https://spatie.be/docs/laravel-permission/v5/basic-usage/basic-usage
+
+$ php artisan make:migration add_group_name_to_permissions_table --table=permissions
+
+$ php artisan migrate
+
+$ php artisan optimize
+
+-------
+
+
 
 
 
