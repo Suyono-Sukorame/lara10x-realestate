@@ -258,16 +258,21 @@ https://www.youtube.com/watch?v=Y868e6esbKs&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukx
 
 -------
 
+Laravel 10 Full Course | #33 Install Laravel Spatie Permission
 
+https://www.youtube.com/watch?v=K_oOPIuj9SI&list=PL8z-YHNIa8wkt_I241bS8jR7QT8ukxEoL&index=34
 
+https://spatie.be/docs/laravel-permission/v5/installation-laravel
 
+$ composer require spatie/laravel-permission
 
+$ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 
+$ php artisan optimize:clear
 
+$ php artisan migrate
 
-
-
-
+-------
 
 
 
